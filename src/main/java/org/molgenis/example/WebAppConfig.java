@@ -18,7 +18,7 @@ import app.DatabaseConfig;
 @EnableWebMvc
 @ComponentScan("org.molgenis")
 @Import(
-{ DatabaseConfig.class })
+{ DatabaseConfig.class , SdkConfig.class})
 public class WebAppConfig extends WebMvcConfigurerAdapter
 {
 	@Override
