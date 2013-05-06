@@ -5,8 +5,8 @@ MOLGENIS is an collaborative open source project on a mission to generate great 
 The procedure below tells you how to 
 1. checkout the molgenis project AND this sdk 
 2. install Eclipse
-3. generate the molgenis 'core' (only needed once)
-4. create and customize your molgenis using the molgenis-sdk project as template
+3. compile the molgenis 'core' (only needed once)
+4. create and customize your own molgenis using the molgenis-sdk project as template
 
 If you have experience with Maven and Java this should be quite familiar.
 
@@ -16,11 +16,10 @@ Go to the directory where you keep your git repositories, e.g.
 
 	cd ~/git
 
-
 Create a new workspace directory, e.g.
 
-	mkdir workspace
-	cd workspace
+	mkdir molgenis-workspace
+	cd molgenis-workspace
 
 
 Clone the molgenis repo and sdk into this directory
@@ -41,10 +40,11 @@ start eclipse:
 	~/Software/eclipse-juno-4.2/eclipse
 
 
-When asked chose (new) workspace directory. I choose to simply same directory ~/git/workspace as before
+When asked chose (new) workspace directory. I choose to simply same directory ~/git/molgenis-workspace as before
 
 Now install the plugins by choosing {{{Help -> Eclipse marketplace}}}. 
 Add the following (you can restart Eclipse when done):
+
 * maven integration for eclipse
 * Apt M2E connector
 * JBoss Tools (ONLY SELECT THE 'FreeMarker IDE feature' later in the wizard!)
@@ -58,20 +58,25 @@ Start Eclipse, select your workspace if asked.
 
 Click: File -> Import ... -> Existing Maven Projects 
 
-Set root directory to your git checkout folder. E.g. ~/git/workspace
+Set root directory to your git checkout folder. E.g. ~/git/molgenis-workspace
 (this means you can still see the 'molgenis' folder).
 
-Eclipse discovers all molgenis modules (should be all checked).
+Eclipse discovers all molgenis modules. Only select:
+
+* molgenis-core
+* molgenis-core-ui
+* molgenis-sdk
 
 Click next/okay; eclipse will now import the modules. Also Eclipse will automatically install maven connector plugins when needed (restart follows)
 
-## 4. generate the molgenis code
+## 4. compile the molgenis code
 
 If still open, close the 'Welcome' screen
 
 Eclipse will automatically build and download jars
 
-Right mouse 'molgenis' -> Run as -> Maven install
+Right mouse 'molgenis-core' -> Run as -> Maven install
+Right mouse 'molgenis-core-ui' -> Run as -> Maven install
 
 After generation eclipse will compile automagically
 
