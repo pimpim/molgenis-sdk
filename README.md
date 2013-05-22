@@ -12,6 +12,11 @@ If you have experience with Maven and Java this should be quite familiar.
 
 ## 1. clone the molgenis repo and sdk
 
+(Optional) If you want to manager your project in github, first clone the sdk
+
+	browse https://github.com/molgenis/molgenis-sdk.git
+	click [fork] to create a fork in your account
+
 Go to the directory where you keep your git repositories, e.g.
 
 	cd ~/git
@@ -24,9 +29,11 @@ Create a new workspace directory, e.g.
 
 Clone the molgenis repo and sdk into this directory
 
-	git clone https://github.com/<yourname>/molgenis.git
+	git clone https://github.com/molgenis/molgenis.git
 	git clone https://github.com/<yourname>/molgenis-sdk.git
-
+	
+	//alternative, if you don't use your own fork
+	git clone https://github.com/molgenis/molgenis-sdk.git
 
 Now you have a folder 'molgenis' and 'molgenis-sdk' in your workspace directory.
 
@@ -75,8 +82,7 @@ If still open, close the 'Welcome' screen
 
 Eclipse will automatically build and download jars
 
-Right mouse 'molgenis-core' -> Run as -> Maven install
-Right mouse 'molgenis-core-ui' -> Run as -> Maven install
+Right mouse 'molgenis' -> Run as -> Maven install
 
 After generation eclipse will compile automagically
 
