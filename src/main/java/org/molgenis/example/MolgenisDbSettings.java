@@ -31,6 +31,20 @@ public class MolgenisDbSettings implements MolgenisSettings
 	@Override
 	public void setProperty(String key, String value)
 	{
-		this.properties.put(key,value);
+		this.properties.put(key, value);
+	}
+
+	@Override
+	public Boolean getBooleanProperty(String key)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean getBooleanProperty(String key, boolean defaultValue)
+	{
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
