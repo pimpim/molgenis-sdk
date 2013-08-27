@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.molgenis</groupId>
 		<artifactId>molgenis</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<!-- please change this! -->
 	<artifactId>molgenis-sdk</artifactId>
@@ -18,7 +18,6 @@
 					<exclude>**molgenis.properties</exclude>
 					<exclude>**git.properties</exclude>
 					<exclude>**/model/*.xml</exclude>
-					<exclude>**ui.xml</exclude>
 				</excludes>
 			</resource>
 		</resources>
@@ -63,6 +62,11 @@
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-core-ui</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.molgenis</groupId>
+			<artifactId>molgenis-omx-auth</artifactId>
 			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
