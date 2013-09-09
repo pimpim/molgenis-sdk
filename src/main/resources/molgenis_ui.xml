@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<molgenis name="example">
-	<plugin name="molgenis_header" type="plugins.header.MolgenisHeader" />
-	<menu name="Main">
-		<form name="Experiments" entity="Experiment">
-			<menu name="ExperimentMenu">
-				<form name="Samples" entity="Sample" view="list" />
-				<form name="Traits" entity="Trait" view="list" />
-				<form name="Data" entity="Data" />
-				<form name="AggregateData" entity="AggregateData" />
-			</menu>
-		</form>
+<molgenis label="Example" name="example">
+	<menu label="Home" name="main">
+		<plugin id="helloworld" label="Example" name="HelloWorldController" type="org.molgenis.example.helloworld.HelloWorldController"/>
 	</menu>
 </molgenis>
