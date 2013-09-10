@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class WebAppDatabasePopulator extends MolgenisDatabasePopulator
 {
-	@Value("${admin.password:@null}")
+	@Value("${admin.password:@admin}")
 	private String adminPassword;
 
 	@Override
