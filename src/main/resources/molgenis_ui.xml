@@ -2,5 +2,7 @@
 <molgenis label="Example" name="example">
 	<menu label="Home" name="main">
 		<plugin id="helloworld" label="Example" name="HelloWorldController" type="org.molgenis.example.helloworld.HelloWorldController"/>
+		<plugin id="car" label="Car" name="CarController" type="org.molgenis.example.controller.CarController"/>
+		<plugin id="afterlogin" label="ExtraView" name="AfterLoginController" type="org.molgenis.example.controller.AfterLoginController"/>
 	</menu>
 </molgenis>
