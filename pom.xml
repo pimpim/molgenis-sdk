@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.molgenis</groupId>
 		<artifactId>molgenis</artifactId>
-		<version>0.0.3-SNAPSHOT</version>
+		<version>0.0.2</version>
 	</parent>
 	<!-- please change this! -->
 	<artifactId>molgenis-sdk</artifactId>
@@ -57,47 +57,47 @@
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-core</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-core-ui</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-omx-auth</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-omx-core</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-search</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.molgenis</groupId>
 			<artifactId>molgenis-search-elasticsearch</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-context-support</artifactId>
-		    <version>3.2.3.RELEASE</version>
+		    <version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 	</dependencies>
 </project>
