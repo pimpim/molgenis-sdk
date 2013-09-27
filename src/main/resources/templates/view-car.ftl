@@ -23,6 +23,7 @@
 		      	</select>
 		      	</div>
 		      	<input id="selectButton" type="submit" class="btn" value="Select" />
+		      	<a href="${context_url}/view/allcars">view all cars</a>
 	      	</form>
 	      	
 	    
