@@ -11,9 +11,11 @@ import org.molgenis.framework.ui.MolgenisPlugin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(URI)
@@ -38,6 +40,23 @@ public class CarController extends MolgenisPlugin
 	{
 		model.addAttribute("cars", cars);
 		return "view-car";
+	}
+
+	@RequestMapping(value = "/view/allcars", method = RequestMethod.GET)
+	public String viewCars(Model model)
+	{
+		model.addAttribute("cars", cars);
+		return "view-all-cars";
+	}
+
+	@RequestMapping(value = "/view/allcars/add", method = RequestMethod.POST)
+	@ResponseBody
+	public Car addCar(@RequestBody
+	Car car, Model model)
+	{
+		cars.add(car);
+		model.addAttribute("cars", cars);
+		return car;
 	}
 
 	@RequestMapping(value = "/brand", method = RequestMethod.GET)
