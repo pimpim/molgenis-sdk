@@ -1,16 +1,6 @@
 <#include "molgenis-header.ftl">
 <#include "molgenis-footer.ftl">
 <@header/>
-	<!DOCTYPE html>
-<html>
-	<head>
-		<title>Form</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-		<script src="/js/jquery-1.8.3.min.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-	</head>
-	<body>
 		<h3>Select car</h3>
 		<label class="control-label" for="entity-instance-select-static">Entity instance:</label>
 		
@@ -42,7 +32,4 @@
       			});
       		});
       	</script>
-	</body>
-</html>	
-	
 <@footer/>

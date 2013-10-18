@@ -1,16 +1,6 @@
 <#include "molgenis-header.ftl">
 <#include "molgenis-footer.ftl">
 <@header/>
-	<!DOCTYPE html>
-<html>
-	<head>
-		<title>Form</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-		<script src="/js/jquery-1.8.3.min.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-	</head>
-	<body>
 		<label class="control-label" for="entity-instance-select-static">Entity instance:</label>
 			<form id="viewCarsForm">
 				<div class="controls">
@@ -135,8 +125,5 @@
 	      		$('body').prepend(alertDiv);
       		}
       		
-      	</script>
-	</body>
-</html>	
-	
+      	</script>	
 <@footer/>
